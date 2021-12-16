@@ -6,34 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="app.css">
+    <style>
+        body{
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .sol{
+            float: left;
+            width: 75%;
+        }
+        .sag{
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .fakeimg{
+            background-color: #aaa;
+            padding: 30px;
+            width: 100%;
+        }
+        @media screen and (max-width:800px){
+            .sag, .sol{
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="header">
-        <h1>Header</h1>
+        <h1>My Website</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, quasi!</p>
     </div>
     <div class="nav">
         <a href="#">Link</a>
         <a href="#">Link</a>
         <a href="#">Link</a>
+        <a href="#" style="float: right;">Link</a>
     </div>
     <div class="row">
-        <div class="column side">
-            <h2>Side</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="sol">
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5> Title description, Dec 7, 2017</h5>
+                <div class="fakeimg" style="height: 200px;">Image</div>
+                <p>Some text</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quaerat exercitationem cupiditate ratione illum esse, sapiente saepe temporibus voluptatum possimus!</p>
+                
+            </div>
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5> Title description, Dec 7, 2017</h5>
+                <div class="fakeimg" style="height: 200px;">Image</div>
+                <p>Some text</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quaerat exercitationem cupiditate ratione illum esse, sapiente saepe temporibus voluptatum possimus!</p>
+                
+            </div>
         </div>
-        <div class="column middle">
-            <h2>Main Content</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, ad corrupti! Minus obcaecati pariatur, maiores rerum, ut ullam aperiam voluptatem iusto voluptates laudantium recusandae voluptas eum eligendi dolore molestiae! Dolores voluptas totam assumenda facilis labore consequuntur saepe nulla nisi laudantium?</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est ipsam ducimus soluta iusto placeat nisi quae animi! Laborum fugiat error ea expedita consectetur itaque eveniet explicabo libero dolores, non quidem? Fugit sed aliquid, laudantium voluptates saepe doloribus facilis possimus, eaque aperiam libero minima quidem minus.</p>
-        </div>
-        <div class="column side">
-            <h2>Side</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, obcaecati.</p>
+        <div class="sag">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height: 100px;">Image</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, amet.</p>
+            </div>
+            <div class="card">
+                <h3>Populer Post</h3>
+                <div class="fakeimg">Image</div>
+                <div class="fakeimg">Image</div>
+                <div class="fakeimg">Image</div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Some Text...</p>
+            </div>
         </div>
     </div>
     <div class="footer">
-        <p>Footer</p>
+        <h2>Footer</h2>
     </div>
 </body>
 </html>
